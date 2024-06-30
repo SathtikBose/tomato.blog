@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+    background-color: lightyellow;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: white;
+    border-bottom: 2px solid #e2e2e2;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 36px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #E23744;
+    margin: 0;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.dish-details {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dish-details h2 {
+    text-align: center;
+    color: #E23744;
+    margin-bottom: 20px;
+}
+
+.thumbnail-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.thumbnail {
+    width: 100%;
+    max-width: 400px;
+    height: 400px; /* Ensure the image is square */
+    object-fit: cover; /* Crop image to maintain square shape */
+    border-radius: 0; /* Remove any border-radius */
+}
+
+.description h3 {
+    color: darkgreen;
+    margin-bottom: 10px;
+}
+
+.description p, .description ul {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.description ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.description strong {
+    color: #E23744;
+    font-size: 18px;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    background-color: #E23744;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button-container .left-button:hover {
+    background-color: #c62828;
+}
+
+.button-container .right-button:hover {
+    background-color: #c62828;
+}
+
+/* Footer */
+footer {
+    background-color: white;
+    border-top: 2px solid #e2e2e2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.footer-left p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .dish-details {
+        padding: 15px;
+    }
+
+    .dish-details h2 {
+        font-size: 24px;
+    }
+
+    .thumbnail {
+        max-width: 100%;
+        height: auto; /* Maintain aspect ratio for smaller screens */
+    }
+
+    .description p, .description ul {
+        font-size: 14px;
+    }
+
+    .button-container button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}

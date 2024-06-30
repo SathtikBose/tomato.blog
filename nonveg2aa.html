@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Chicken Biryani</title>
+    <link rel="stylesheet" href="nonveg2aa.css">
+    <link rel="icon" type="image/png" href="images/tomato_logo.png">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/tomato_logo.png" alt="Tomato Logo" class="logo">
+            <h1>TOMATO</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="order-form-container">
+            <h2>Order Chicken Biryani</h2>
+            
+            <form id="orderForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="mobile">Mobile:</label>
+                <input type="text" id="mobile" name="mobile" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="doorbell">Press Door Bell:</label>
+                <select id="doorbell" name="doorbell">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                
+                <div class="price-info">
+                    <p>Price without GST: ₹300</p>
+                    <p>GST (18%): ₹54</p>
+                    <p>Total Price (incl. GST): ₹354</p>
+                </div>
+                
+                <div class="payment-methods">
+                    <h3>Select Payment Method</h3>
+                    <label class="payment-method">
+                        <input type="radio" name="payment" value="paytm">
+                        <img src="images/paytm_icon.png" alt="Paytm Icon"> Paytm
+                    </label>
+                    <label class="payment-method">
+                        <input type="radio" name="payment" value="mobikwik">
+                        <img src="images/mobikwik_icon.png" alt="Mobikwik Icon"> Mobikwik
+                    </label>
+                    <label class="payment-method">
+                        <input type="radio" name="payment" value="freecharge">
+                        <img src="images/freecharge_icon.png" alt="Freecharge Icon"> Freecharge
+                    </label>
+                    <label class="payment-method">
+                        <input type="radio" name="payment" value="credit_card">
+                        <img src="images/credit_card_icon.png" alt="Credit Card Icon"> Credit Card
+                    </label>
+                    <label class="payment-method">
+                        <input type="radio" name="payment" value="net_banking">
+                        <img src="images/net_banking_icon.png" alt="Net Banking Icon"> Net Banking
+                    </label>
+                    <label class="payment-method">
+                        <input type="radio" name="payment" value="cod">
+                        <img src="images/cod_icon.png" alt="Cash on Delivery Icon"> Cash on Delivery
+                    </label>
+                </div>
+                
+                <div class="button-container">
+                    <button type="button" onclick="location.href='nonveg2.html'" class="left-button">Back</button>
+                    <button type="button" onclick="placeOrder()" class="right-button">Place Order</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="images/tomato_logo.png" alt="Tomato Logo" class="footer-logo">
+                <p>&copy; Made by Sarthik Bose</p>
+            </div>
+        </div>
+    </footer>
+    <script src="nonveg2aa.js"></script>
+</body>
+</html>
